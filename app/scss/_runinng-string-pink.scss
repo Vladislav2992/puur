@@ -1,0 +1,35 @@
+.running-string {
+    width: 100%;
+    overflow: hidden;
+}
+.running-string__wrapper_pink {
+    width: calc(100 * 2 *(100vw));
+    color: #D79BF9;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    background: #FFDFFC;
+    display: flex;
+    gap: 20px;
+    padding: 16px 0;
+    border-top: 7px solid #FFB9F8;
+    border-bottom: 7px solid #FFB9F8;
+    margin-bottom: 40px;
+
+    p {
+      
+      animation: text 6s infinite linear;
+    }
+
+    @keyframes text {
+        0%{
+          transform: translate(-150%, 0);
+        }
+        
+        100%{
+          transform: translate(100%, 0);
+        }
+      }
+}
+

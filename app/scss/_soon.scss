@@ -1,0 +1,85 @@
+.soon {
+    margin-bottom: calc(20px + 86 * (100vw/1440));
+
+    &__wrapper {
+        width: 100%;
+        height: calc(209px + 200*(100vw / 1440));
+        border-radius: 50px;
+        padding: calc(15px + 25 * (100vw / 1440));
+        display: flex;
+        justify-content: space-between;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+        .soon__btn {        
+            padding: 46px 71px;
+            padding-top: calc(15px + 30 * (100vw / 1440));
+            padding-bottom: calc(15px + 30 * (100vw / 1440));
+            padding-left: calc(24px + 46 * (100vw / 1440));
+            padding-right: calc(24px + 46 * (100vw / 1440));
+            border: 1px solid $blue-color;
+            border-radius: 50px;
+            background: $blue-light;
+            color: $blue-color;
+            font-size: calc(23px + 40 * (100vw / 1440));
+            letter-spacing: 0.64px;
+            align-self: flex-start;
+        }
+        .soon__title {
+            color: $dark-blue;
+            font-size: calc(14px + 30 * (100vw/1440));
+            font-style: normal;
+            font-weight: 300;
+            line-height: 102%;
+            letter-spacing: 0.46px;
+            align-self: flex-end;
+        }  
+    }
+    &__services {
+        background-color: $dark-blue;
+        color: $light-color;
+        border-radius: 0 0 50px 0;
+        padding: 27px 42px;
+        font-size: calc(14px + 12 * (100vw/1440));
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.28px;        
+        height: 150px;
+        transform: translateY(-50px);
+        position: relative;
+        z-index: -1;
+
+        p {
+            position: absolute;
+            bottom: 27px;
+            left: 42px;
+        }
+    }
+
+    @media (max-width: 560px) {
+        .soon__btn {
+            font-size: 24px;
+            padding: 16px 25px;
+            letter-spacing: 0.24;
+        } 
+        
+        .soon__title {
+            font-size: 16px;
+        } 
+    }
+
+    @media (max-width: 380px) {
+        .soon__btn {
+            font-size: 18px;
+            padding: 12px 20px;
+            letter-spacing: 0.24;
+        } 
+        
+        .soon__title {
+            font-size: 15px;
+        } 
+    }
+}
+
+
